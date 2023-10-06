@@ -4,10 +4,10 @@ import java.io.PrintStream;
 
 public class Main {
     public static void main(String[] args) {
-        sayHello();
+        sayHello(System.out);
     }
 
-    public static void sayHello() {
-        System.out.print("Hello world!");
+    public static void sayHello(PrintStream out) {
+        out.print("Hello, world!");
     }
 }
